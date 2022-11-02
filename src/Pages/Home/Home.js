@@ -56,9 +56,10 @@ const Home = () => {
 
     }
     return (
-        <div>
-            <div id="login-box">
-                <div class="left">
+        <div className='container'>
+            
+            <div class="row" id="login-box">
+                <div class="left col-lg-6 col-sm-12">
                     <h1>Sign up</h1>
                     <form onSubmit={HandleFormSubmit}>
                     <input onBlur={HandlEmail} type="text" name="email" placeholder="E-mail" />
@@ -72,15 +73,22 @@ const Home = () => {
                    
                 </div>
 
-                <div class="right">
-                    <span class="loginwith">Sign in with<br />social network</span>
-
+                <div class="right col-lg-6 col-sm-12">
+                    <div>
                     <button class="social-signin facebook">Log in with facebook</button>
                     <button class="social-signin twitter">Log in with Twitter</button>
                     <button onClick={SubmitGoogle} class="social-signin google">Log in with Google+</button>
+
+                    </div>
+                    <span class="loginwith">Sign in with<br />social network</span>
+
+                   
                 </div>
                 <div class="or">OR</div>
             </div>
+
+           
+            
 
         </div>
     );

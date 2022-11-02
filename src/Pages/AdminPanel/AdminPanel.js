@@ -3,7 +3,7 @@ import './AdminPanel.css';
 
 const AdminPanel = () => {
     return (
-        <div>
+        <div className='panel'>
             
         </div>
     );
